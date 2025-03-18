@@ -12,3 +12,16 @@ const personnage = {
 };
 console.log(personnage); // { nom: 'John', age: 30, sexe: 'homme' }
 console.log(typeof (personnage)); // object
+const person = {
+    name: "John Doe",
+    age: 30,
+    greet() {
+        console.log("Hello");
+    },
+};
+function printPerson(personPrototype) {
+    console.log(personPrototype.name);
+    console.log(personPrototype.age);
+    personPrototype.greet();
+}
+printPerson(person);

@@ -19,3 +19,27 @@ const personnage: Personnage = {
 
 console.log(personnage); // { nom: 'John', age: 30, sexe: 'homme' }
 console.log(typeof(personnage)); // object
+
+
+interface Person {
+    name: string;
+    age: number;
+    greet(): void;
+}
+
+const person: Person = {
+    name: "John Doe",
+    age: 30,
+    greet() {
+        console.log("Hello")
+    },
+}
+
+function printPerson(personPrototype: Person): void
+{
+    console.log(personPrototype.name);
+    console.log(personPrototype.age);
+    personPrototype.greet();
+}
+
+printPerson(person);
