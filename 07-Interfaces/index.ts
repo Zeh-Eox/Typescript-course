@@ -43,3 +43,24 @@ function printPerson(personPrototype: Person): void
 }
 
 printPerson(person);
+
+
+interface animal {
+    name: string;
+    age?: number; // Parametre optionnel
+}
+
+interface numbers {
+    readonly firstNumber: number;
+    readonly secondNumber: number; // ReadOnly => pas modifiable
+}
+
+interface dog extends animal {
+    speed: number;
+}
+
+let bullDog: dog = {
+    name: "Bobby",
+    speed: 30,
+    // age optionnel
+}

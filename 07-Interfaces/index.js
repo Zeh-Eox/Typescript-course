@@ -25,3 +25,8 @@ function printPerson(personPrototype) {
     personPrototype.greet();
 }
 printPerson(person);
+let bullDog = {
+    name: "Bobby",
+    speed: 30,
+    // age optionnel
+};
